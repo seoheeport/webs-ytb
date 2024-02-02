@@ -1,10 +1,17 @@
 import React from 'react';
 
-const Main = () =>{
-    return(
-        <main id='main' role='main'>
+import Header from './Header';
+import Footer from './Footer';
 
-        </main>
+const Main = (props) =>{
+    return(
+        <>
+            <Header />
+            <main id='main' role='main'>
+                {props.children}
+            </main>
+            <Footer />
+        </>
     )
 }
 

@@ -1,8 +1,11 @@
 import React from 'react';
+import Main from '../components/section/Main';
 
 const Home =()=>{
     return(
-        <div>home</div>
+        <Main>
+            <div>home</div>
+        </Main>
     )
 }
 
