@@ -6,17 +6,17 @@ import { FaInstagram } from "react-icons/fa6";
 
 export const headerMenus=[
     {
-        title:"어쩌구",
+        title:"메인",
         icon:<PiAirplaneBold />,
         src:"/",
     },
     {
-        title:"추천 영상",
+        title:"오늘의 영상",
         icon:<PiArrowBendDownRightBold />,
         src:"/today",
     },
     {
-        title:"dev",
+        title:"강아지 채널",
         icon:<PiArrowBendDownRightBold />,
         src:"/developer",
     },

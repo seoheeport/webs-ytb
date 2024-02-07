@@ -3,11 +3,12 @@
 
     a{
         display:flex;
+        align-items:center;
         padding:10px;
         margin:10px;
 
         i{
-            width:24px;height:24px;margin-right:10px;display:block;background-color:var(--pri);
+            width:24px;height:39px;margin-right:10px;display:block;background-color:var(--pri);
         }
         span{
             font-size:20px;
@@ -55,7 +56,7 @@
 }
 
 .header__sns{
-    position:fixed;bottom:0;left:0;right:0;width:260px;text-align:center;padding:15px 0 10px;background-color:var(--bk);
+    position:fixed;bottom:0;left:0;right:0;width:260px;text-align:center;padding:15px 0 10px;background-color:var(--bk);border-right:1px solid var(--bk500);
 
     li{
         display:inline-block;

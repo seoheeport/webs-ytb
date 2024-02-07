@@ -6,7 +6,7 @@
     height: 100%;
     overflow-y: auto;
     z-index: 10000;
-    border-right:var(--bk500);
+    border-right:1px solid var(--bk500);
 }
 #main {
     max-width: 2000px;
@@ -17,7 +17,7 @@
 #footer {
     text-align: center;
     background-color: var(--bk);
-    border-top:1px solid var(--bk100);
+    border-top:1px solid var(--bk500);
     padding:20px;
     margin-left:260px;
     width:calc(100% - 260px);
