@@ -67,7 +67,7 @@ export const todayText = [
           "liveBroadcastContent": "none",
           "publishTime": "2024-01-19T06:00:23Z"
       },
-      page: "/port",
+      page: "/cats",
   },
   {
       "kind": "youtube#searchResult",
@@ -137,7 +137,7 @@ export const todayText = [
           "liveBroadcastContent": "none",
           "publishTime": "2024-01-31T22:30:12Z"
       },
-      page: "/port",
+      page: "/cats",
   },
   {
       "kind": "youtube#searchResult",
@@ -312,6 +312,6 @@ export const todayText = [
           "liveBroadcastContent": "none",
           "publishTime": "2024-01-29T22:30:10Z"
       },
-      page: "/developer",
+      page: "/dogs",
   },
 ]

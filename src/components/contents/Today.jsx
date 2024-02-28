@@ -1,7 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import { todayText } from '../../data/today'
-import { Link } from 'react-router-dom'
 
 function Today() {
   return (

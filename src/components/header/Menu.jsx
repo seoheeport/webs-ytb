@@ -9,7 +9,7 @@ const Menu =()=>{
         <nav className='header__menu'>
             <ul className='menu'>
             {headerMenus.map((menu, key)=>(
-                <li key={key} className={location.pathname===menu.src?'active':'' }>
+                <li key={key} className={location.pathname===menu.src?'active':undefined}>
                     <Link to={menu.src}>
                         {menu.icon}{menu.title}
                     </Link>

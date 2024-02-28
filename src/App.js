@@ -4,11 +4,10 @@ import Main from './components/section/Main';
 
 const Home = lazy(()=>import('./pages/Home'));
 const Today = lazy(()=>import('./pages/Today'));
-const Developer = lazy(()=>import('./pages/Developer'));
-const Webd = lazy(()=>import('./pages/Webd'));
+const Dogs = lazy(()=>import('./pages/Dogs'));
+const Cats = lazy(()=>import('./pages/Cats'));
 const Website = lazy(()=>import('./pages/Website'));
 const Gsap = lazy(()=>import('./pages/Gsap'));
-const Port = lazy(()=>import('./pages/Port'));
 const Youtube = lazy(()=>import('./pages/Youtube'));
 const Channel = lazy(()=>import('./pages/Channel'));
 const Video = lazy(()=>import('./pages/Video'));
@@ -22,11 +21,10 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/today' element={<Today />} />
-          <Route path='/developer' element={<Developer />} />
-          <Route path='/webd' element={<Webd />} />
+          <Route path='/dogs' element={<Dogs />} />
+          <Route path='/cats' element={<Cats />} />
           <Route path='/website' element={<Website />} />
           <Route path='/gsap' element={<Gsap />} />
-          <Route path='/port' element={<Port />} />
           <Route path='/youtube' element={<Youtube />} />
           <Route path='/channel/:channelId' element={<Channel/>} />
           <Route path='/video/:videoId' element={<Video />} />

@@ -10,7 +10,7 @@ const Today =()=>{
       title="오늘의 추천영상"
       description="오늘의 추천 유튜브 영상입니다."
     >
-      <section className="todayPage">
+      <section id="today">
         {todayText.map((vdo, key) =>
           <div className='today__inner' key={key}>
             <div className="today__thumb play__icon">

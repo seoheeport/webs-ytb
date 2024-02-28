@@ -4,3 +4,10 @@
   label{width:24px;height:24px;background-color:#f0f;position:absolute;left:53px;top:28px;background-size:cover;}
   input{background-color:var(--bk500);border:1px solid var(--bk100);width:100%;padding:14px 45px;border-radius:40px;font-size:16px;color:var(--wt)}
 }
+@media (max-width:840px){
+  .search__inner{
+    padding:17px 40px 17px 180px;
+
+    label{left:194px;}
+  }
+}

@@ -1,20 +1,20 @@
 import React from 'react';
 import Main from '../components/section/Main';
+
+import { catsData } from '../data/cats';
 import { Link } from 'react-router-dom';
 
-import { websiteData } from '../data/website';
-
-const Website =()=>{
+const Cats =()=>{
   return(
     <Main
-      title="웹 표준"
-      description="웹 표준 유튜브"
+      title="고양이들"
+      description="고양이"
     >
-      <section>
+      <section id="cats">
         <ul className="videos">
-          {websiteData.map((vdo, key)=>(
-            <li key={key} className="videos__item play__icon">
-              <div>
+          {catsData.map((vdo, key) =>(
+            <li className="videos__item" key={key}>
+              <div className="vedeo__thumb play__icon">
                 <Link to={vdo.id.videoId}>
                   <img src={vdo.snippet.thumbnails.medium.url} alt={vdo.snippet.title} />
                 </Link>
@@ -27,4 +27,4 @@ const Website =()=>{
   )
 }
 
-export default Website
+export default Cats

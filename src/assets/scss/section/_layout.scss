@@ -24,3 +24,17 @@
     color:var(--bk500);
     font-size:0.8em;
 } 
+
+@media(max-width:840px){
+  #header{
+    left:-260px; transition:left 0.3s; background-color:var(--bk);
+
+    .header__logo{position:fixed;left:0;top:0;}
+  }
+  #main{
+    padding-left:0;
+  }
+  #footer{
+    width:100%;margin-left:0;
+  }
+}

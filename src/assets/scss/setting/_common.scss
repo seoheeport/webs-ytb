@@ -17,3 +17,15 @@ section{
   }
 
 }
+
+// 섹션 로딩 소스
+.isLoading .vedeo__thumb,
+.isLoading .dogs__img{
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.isLoaded .vedeo__thumb
+.isLoaded .dogs__img{
+  opacity: 1;
+  transition: opacity 0.5s; 
+}

@@ -1,11 +1,17 @@
 import React from 'react';
 import Main from '../components/section/Main';
-
 import Today from '../components/contents/Today';
-import Developer from '../components/contents/Developer';
-import Website from '../components/contents/Website';
-import Portfolio from '../components/contents/Portfolio';
-import Youtube from '../components/contents/Youtube';
+import Dogs from '../components/contents/Dogs';
+
+/* VideoSlider 컴포넌트 화
+* import Cats from '../components/contents/Cats';
+* import Website from '../components/contents/Website';
+* import Gsap from '../components/contents/Gsap';
+*/
+import VideoSlider from '../components/videos/VideoSlider';
+import { catsData } from '../data/cats';
+import { gsapData } from '../data/gsap';
+import { websiteData } from '../data/website';
 
 const Home =()=>{
   return(
@@ -14,10 +20,10 @@ const Home =()=>{
       description="YTB 메인 입니다."
     >
       <Today />
-      <Developer />
-      <Website />
-      <Portfolio />
-      <Youtube />
+      <Dogs />
+      <VideoSlider videos={catsData} title="🐈 고양이 입니다" id="cats" />
+      <VideoSlider videos={gsapData} title="GSAP" id="gsap" />
+      <VideoSlider videos={websiteData} title="웹 표준" id="website" />
     </Main>
   )
 }

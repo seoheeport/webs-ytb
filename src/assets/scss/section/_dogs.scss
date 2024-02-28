@@ -1,0 +1,26 @@
+.dogs__img{
+  a{aspect-ratio:1/1;background-color:var(--bk500)}
+}
+
+.dogs__inner{
+  display:flex;flex-wrap:wrap;
+
+  .dogs__img{overflow:hidden;border-radius:50%;margin-bottom:16px;}
+  .dogs__info{text-align:center;@include line-one;padding-bottom:40px;font-size:0.875rem;}
+
+}
+
+@media (max-width:1200px){
+  .dogs__inner{
+    justify-content:center;
+
+    .dogs__img{margin:10px auto;}
+  }
+}
+
+#dogsPage .dogs__inner{
+	gap:20px;
+	.dogs{
+		width:130px;
+	}
+}

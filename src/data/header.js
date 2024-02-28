@@ -18,12 +18,12 @@ export const headerMenus=[
     {
         title:"강아지 채널",
         icon:<PiArrowBendDownRightBold />,
-        src:"/developer",
+        src:"/dogs",
     },
     {
-        title:"WEB D",
+        title:"고양이들",
         icon:<PiArrowBendDownRightBold />,
-        src:"/webd",
+        src:"/cats",
     },
     {
         title:"웹 표준",
@@ -34,11 +34,6 @@ export const headerMenus=[
         title:"GSAP",
         icon:<PiArrowBendDownRightBold />,
         src:"/gsap",
-    },
-    {
-        title:"PORT",
-        icon:<PiArrowBendDownRightBold />,
-        src:"/port",
     },
     {
         title:"YTB",
@@ -94,12 +89,12 @@ export const snsLink=[
     },
     {
         title:"유튜브",
-        url:"https://www.naver.com",
+        url:"https://www.youtube.com/",
         icon:<PiYoutubeLogoFill />
     },
     {
         title:"instagram",
-        url:"https://www.naver.com",
+        url:"https://www.instagram.com/youtubekorea/",
         icon:<FaInstagram />
     },
 ];
