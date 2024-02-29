@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 function VideoSearch({videos}) {
-  console.log(videos)
   return (
     <div className="videos">
       {videos.map((vdo, idx) =>

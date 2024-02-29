@@ -28,3 +28,9 @@
 	.title{font-size:0.875rem;margin-top:0.875rem;@include line-two}
   .author{font-size:0.75rem;margin-top:4px;font-weight:900;text-decoration:underline;text-underline-position:under;text-transform:uppercase;}
 }
+
+.video__more{
+	button{
+		width:100%;border:0;margin:24px 0;padding:12px 0;background-color:var(--bk100);border-radius:40px;font-size:0.825rem;color:var(--wt);transition:all 0.3s;cursor:pointer;
+	}
+}
