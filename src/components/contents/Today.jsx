@@ -1,11 +1,18 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
 
 import { todayText } from '../../data/today'
 
 function Today() {
+	const [loading, setLoading] = useState(true);
+	useEffect(()=>{
+		setTimeout(()=>{
+			setLoading(false);
+		}, 300)
+	},[]);
+	const loadingClass = loading? 'isLoading' : 'isLoaded';
   return (
-    <section id='today'>
+    <section id='today' className={loadingClass}>
       <div className='today__inner'>
         <div className="today__thumb play__icon">
           <Link to={todayText[0].page}>

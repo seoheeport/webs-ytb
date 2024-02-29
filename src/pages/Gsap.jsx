@@ -1,27 +1,25 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Main from '../components/section/Main';
 
+import VideoCards from '../components/videos/VideoCards';
 import { gsapData } from '../data/gsap';
-import { Link } from 'react-router-dom';
 
 const Gsap =()=>{
+	const [loading, setLoading] = useState(true);
+	useEffect(()=>{
+		setTimeout(()=>{
+			setLoading(false);
+		},300)
+	},[])
+	const loadingClass = loading? 'isLoading' : 'isLoaded';
   return(
     <Main
       title="Gsap"
       description="Gsap 검색"
     >
-      <section id="gsap">
-        <ul className="videos">
-          {gsapData.map((vdo, key)=>(
-            <li key={key} className="videos__item">
-              <div className="vedeo__thumb play__icon">
-                <Link to={vdo.id.videoId}> 
-                  <img src={vdo.snippet.thumbnails.medium.url} alt={vdo.snippet.title} />
-                </Link>
-              </div>
-            </li>
-          ))}
-        </ul>
+      <section id="gsap" className={loadingClass}>
+				<h2>GSAP</h2>
+				<VideoCards vdoData={gsapData} />
       </section>
     </Main>
   )

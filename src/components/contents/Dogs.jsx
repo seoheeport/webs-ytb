@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 
 import 'swiper/css';
@@ -10,9 +10,17 @@ import { Navigation, Autoplay, } from 'swiper/modules';
 import { channels } from '../../data/channel';
 
 function Dogs() {
+	const [loading, setLoading] = useState(true);
+	useEffect(()=>{
+		setTimeout(()=>{
+			setLoading(false);
+		}, 300)
+	},[]);
+	const loadingClass = loading? 'isLoading' : 'isLoaded';
+
   return (
-    <section id='dogs'>
-      <h2>🐕 오늘의 강아지 입니다.</h2>
+    <section id='dogs' className={loadingClass}>
+      <h2>🐕 강아지 채널</h2>
       <div className="dogs__inner">
         <Swiper
           slidesPerView={4}

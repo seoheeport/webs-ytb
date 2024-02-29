@@ -9,7 +9,7 @@ export const todayText = [
       "snippet": {
           "publishedAt": "2024-02-05T22:30:00Z",
           "channelId": "UC22go5LdQEw-iDuxFb4C0hw",
-          "title": "나는 태어난 지 25일된 시바견 새끼다 [애니멀봐 나새끼 61호]ㅣI&#39;m 25 Days Old Shiba Inu Baby [SBS Animal I&#39;m A Baby 61st]",
+          "title": "나는 태어난 지 25일된 시바견 새끼다 [애니멀봐 나새끼 61호]ㅣI'm 25 Days Old Shiba Inu Baby [SBS Animal I&#39;m A Baby 61st]",
           "description": "[나는 새끼다] 61호 새끼 - 시바견 - 우리는 태어난 지 25일된 시바견 새끼를 밀착취재 해 보았다. #집에서함께애니멀봐 #나는새끼다 ...",
           "thumbnails": {
               "default": {

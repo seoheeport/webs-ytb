@@ -21,7 +21,7 @@ const Home =()=>{
     >
       <Today />
       <Dogs />
-      <VideoSlider videos={catsData} title="🐈 고양이 입니다" id="cats" />
+      <VideoSlider videos={catsData} title="🐈 고양이들" id="cats" />
       <VideoSlider videos={gsapData} title="GSAP" id="gsap" />
       <VideoSlider videos={websiteData} title="웹 표준" id="website" />
     </Main>

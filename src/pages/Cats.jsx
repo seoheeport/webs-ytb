@@ -1,27 +1,26 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Main from '../components/section/Main';
 
+import VideoCards from '../components/videos/VideoCards';
 import { catsData } from '../data/cats';
-import { Link } from 'react-router-dom';
 
 const Cats =()=>{
+	const [loading, setLoading] = useState(true);
+	useEffect(()=>{
+		setTimeout(()=>{
+			setLoading(false);
+		}, 300)
+	},[])
+	const loadingClass = loading?'isLoading' : 'isLoaded';
+
   return(
     <Main
       title="고양이들"
       description="고양이"
     >
-      <section id="cats">
-        <ul className="videos">
-          {catsData.map((vdo, key) =>(
-            <li className="videos__item" key={key}>
-              <div className="vedeo__thumb play__icon">
-                <Link to={vdo.id.videoId}>
-                  <img src={vdo.snippet.thumbnails.medium.url} alt={vdo.snippet.title} />
-                </Link>
-              </div>
-            </li>
-          ))}
-        </ul>
+      <section id="cats" className={loadingClass}>
+				<h2>🐈 고양이들</h2>
+				<VideoCards vdoData={catsData}/>
       </section>
     </Main>
   )

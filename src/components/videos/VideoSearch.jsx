@@ -4,20 +4,18 @@ import { Link } from 'react-router-dom';
 function VideoSearch({videos}) {
   console.log(videos)
   return (
-    <div>
-      {videos.map((video, idx) =>
-        <div className='video' key={idx}>
-          <div className='video__thumb'>
-            <Link
-              to={`/video/${video.id.videoId}`}
-              style={{backgroundImage:`url(${video.snippet.thumbnails.high.url})`}}
-            />
-          </div>
-          <div className='video__info'>
-            <p className="title">
-              <Link to={`/video/${video.id.videoId}`}>{video.snippet.title}</Link>
-            </p>
-          </div>
+    <div className="videos">
+      {videos.map((vdo, idx) =>
+        <div className='videos__item' key={idx}>
+					<Link to={`/video/${vdo.id.videoId}`}>
+						<div className='video__thumb play__icon'>
+							<img src={vdo.snippet.thumbnails.medium.url} alt={vdo.snippet.title} />
+						</div>
+						<div className='video__info'>
+							<p className="title">{vdo.snippet.title}</p>
+							<p className="author">{vdo.snippet.channelTitle}</p>
+						</div>
+					</Link>
         </div>
       )}
     </div>
