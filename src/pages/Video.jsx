@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { fetchFromAPI } from '../utils/api';
 
 import Main from '../components/section/Main';
 import ReactPlayer from 'react-player'
