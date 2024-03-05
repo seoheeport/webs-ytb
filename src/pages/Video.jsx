@@ -7,7 +7,6 @@ import ReactPlayer from 'react-player'
 import { FaRegThumbsUp } from "react-icons/fa";
 import { GoComment } from "react-icons/go";
 
-
 const Video =()=>{
 	const { videoId } = useParams();
 	const [videoDetail, setVideoDetail] = useState(null);

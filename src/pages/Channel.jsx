@@ -32,28 +32,6 @@ const Channel =()=>{
 		fetchResults();
 	},[channelId]);
 
-	// useEffect(() => {
-	// 	fetch(
-	// 			`https://www.googleapis.com/youtube/v3/channels?part=snippet,statistics,brandingSettings&id=${channelId}&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`,
-	// 	)
-	// 	.then(response => response.json())
-	// 	.then(result => {
-	// 		setChannelDetail(result.items[0]);
-	// 		setLoading(false);
-	// 	})
-	// 	.catch(error => console.log(error));
-
-	// 	fetch(
-	// 			`https://www.googleapis.com/youtube/v3/search?channelId=${channelId}&part=snippet%2Cid&order=date&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`,
-	// 	)
-	// 	.then(response => response.json())
-	// 	.then(result => {
-	// 		setChannelVideo(result.items);
-	// 		setLoading(false);
-	// 	})
-	// 	.catch(error => console.log(error));
-	// }, [channelId]);
-
 	const channelPageClass = loading ? 'isLoading' : 'isLoaded';
 	const loadMoreVideos = async()=>{
 		if(nextPageToken){

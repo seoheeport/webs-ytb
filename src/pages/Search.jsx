@@ -36,26 +36,6 @@ const Search =()=>{
 
 	const loadingClass = loading? 'isLoading' : 'isLoaded';
 
-	/*
-	useEffect(()=>{ // 컴포넌트가 마운트 되거나 [searchID] 변경될 때마다 API 호출
-		fetch(
-			`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=48&q=${searchId}&type=video&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`
-		)
-		.then(response => response.json()) //json 으로 파싱
-		.then(result =>{
-			console.log(result);
-			setVideos(result.items);
-		})
-		.catch(error => console.log(error));
-	},[searchId]);
-	*/
-	/* Raipid API 로 변경
-	useEffect(()=>{
-		fetchFromAPI(`search?part=snippet&q=${searchId}`)
-		.then((data) => setVideos(data.items))
-	},[searchId])
-	*/
-
   return(
     <Main
       title="유튜브 검색"
