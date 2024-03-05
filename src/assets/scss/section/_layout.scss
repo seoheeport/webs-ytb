@@ -29,8 +29,13 @@
 @media(max-width:840px){
   #header{
     left:-260px;transition:left 0.3s;padding-top:82px;background-color:var(--bk);
-
     .header__logo{position:fixed;left:0;top:0;}
+		&.active{
+			left:0;
+			.header__logo{
+				border-bottom:0;
+			}
+		}
   }
   #main{
 		padding-top:72px;

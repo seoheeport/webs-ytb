@@ -78,7 +78,10 @@ const Channel =()=>{
 			<section id="channel" className={channelPageClass}>
 			{channelDetail&&(
 				<div className="channel__inner">
-					<div className="channel__header" style={{backgroundImage:`url(${channelDetail.brandingSettings.image.bannerExternalUrl})`}}></div>
+					{
+						typeof channelDetail.brandingSettings.image != "undefined" ?
+						<div className="channel__header" style={{backgroundImage:`url(${channelDetail.brandingSettings.image.bannerExternalUrl})`}}></div> : <div class="channel__noheader"></div> 
+					}
 					<div className="channel__info">
 						<div className="circle">
 							<img src={channelDetail.snippet.thumbnails.high.url} alt={channelDetail.snippet.title} />
