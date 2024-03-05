@@ -9,6 +9,7 @@
     border-right:1px solid var(--bk500);
 }
 #main {
+		min-width:360px;
     max-width: 2000px;
     min-height: 100vh;
     margin: 0 auto;
@@ -27,11 +28,12 @@
 
 @media(max-width:840px){
   #header{
-    left:-260px; transition:left 0.3s; background-color:var(--bk);
+    left:-260px;transition:left 0.3s;padding-top:82px;background-color:var(--bk);
 
     .header__logo{position:fixed;left:0;top:0;}
   }
   #main{
+		padding-top:72px;
     padding-left:0;
   }
   #footer{

@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { useNavigate } from 'react-router-dom';
+import { IoSearchOutline } from "react-icons/io5";
 
 function Search() {
   const [searchKeyword, setSearchKeyword] = useState('');
@@ -15,12 +16,13 @@ function Search() {
     <div id='search'>
       <div className='search__inner'>
         <label>
+					<IoSearchOutline />
           <span className='ir'>검색</span>
         </label>
         <input
           type='search'
           id='searchInput'
-          placeholder='검색어'
+          placeholder='검색'
           autoComplete='off'
           className='search__input'
           value={searchKeyword}

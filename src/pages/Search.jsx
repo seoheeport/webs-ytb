@@ -65,11 +65,11 @@ const Search =()=>{
         <div className='video__inner search'>
           <VideoSearch videos={videos} />
         </div>
-				<div className="video__more">
-					{nextPageToken && (
+				{nextPageToken && (
+					<div className="video__more">
 						<button onClick={handleLoadMore}>더 보기</button>
-					)}
-				</div>
+					</div>
+				)}
       </section>
     </Main>
   )

@@ -7,7 +7,7 @@ function VideoCards({vdoData}) {
 			{vdoData.map((vdo, key)=>(
 				<li className="videos__item" key={key}>
 					<div className="vedeo__thumb play__icon">
-						<Link to={vdo.id.videoId}>
+						<Link to={`/video/${vdo.id.videoId}`}>
 							<img src={vdo.snippet.thumbnails.medium.url} alt={vdo.snippet.title} />
 						</Link>
 					</div>
