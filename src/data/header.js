@@ -25,6 +25,11 @@ export const headerMenus=[
         icon:<PiArrowBendDownRightBold />,
         src:"/cats",
     },
+		{
+			title:"시츄",
+			icon:<PiArrowBendDownRightBold />,
+			src:"/youtube",
+		},
     {
         title:"웹 표준",
         icon:<PiArrowBendDownRightBold />,
@@ -34,11 +39,6 @@ export const headerMenus=[
         title:"GSAP",
         icon:<PiArrowBendDownRightBold />,
         src:"/gsap",
-    },
-    {
-        title:"YTB",
-        icon:<PiArrowBendDownRightBold />,
-        src:"/youtube",
     },
 ];
 

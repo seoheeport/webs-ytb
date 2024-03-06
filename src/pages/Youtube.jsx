@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import Main from '../components/section/Main';
 
 import VideoCards from '../components/videos/VideoCards';
-import { gsapData } from '../data/gsap';
+import { dogsData } from '../data/dogs';
 
 const Youtube =()=>{
 	const [loading, setLoading] = useState(true);
@@ -14,12 +14,12 @@ const Youtube =()=>{
 	const loadingClass = loading? 'isLoading' : 'isLoaded';
   return(
     <Main
-      title="Gsap"
-      description="Gsap 검색"
+      title="시츄"
+      description="시츄 유튜브"
     >
       <section id="gsap" className={loadingClass}>
-				<h2>GSAP</h2>
-				<VideoCards vdoData={gsapData} />
+				<h2>시츄</h2>
+				<VideoCards vdoData={dogsData} />
       </section>
     </Main>
   )
